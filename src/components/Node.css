@@ -1,0 +1,114 @@
+td {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(175, 216, 248);
+}
+
+.node-start {
+    /* background: green; */
+    background-image: url("../male.svg") !important;
+    animation-name: beat;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(0.7);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(0.7);
+    }
+}
+
+.node-start-vis {
+    background-image: url("../male.svg") !important;
+}
+
+.node-end-vis {
+    background-image: url("../target.svg") !important;
+}
+
+.node-end {
+    /* background: red; */
+    background-image: url("../target.svg") !important;
+    animation-name: beat;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.node-wall {
+    background-color: rgb(12, 53, 71);
+    animation-name: wall-anim;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.node-visited {
+    /* background: blue; */
+    animation-name: dijkstras;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes wall-anim {
+    0% {
+        transform: scale(0.7);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+        border: 1px solid rgb(12, 53, 71);
+    }
+}
+
+@keyframes dijkstras {
+    from {
+        transform: scale(0.3);
+        background: #d8e3e7;
+        border-radius: 100%;
+    }
+    to {
+        transform: scale(1);
+        background: #51c4d3;
+        border: 1px solid white;
+    }
+}
+
+@keyframes dijkstras2 {
+    from {
+        transform: scale(0.3);
+        background: #fdca40;
+        border-radius: 100%;
+    }
+    to {
+        transform: scale(1);
+        background: #fb3640;
+        border: 1px solid white;
+    }
+}
+
+.node-shortest-path {
+    animation-name: shortestPath;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shortestPath {
+    from {
+        transform: scale(0.6);
+        background: rgb(255, 254, 106);
+    }
+    to {
+        background: rgb(255, 254, 106);
+    }
+}

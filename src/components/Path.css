@@ -1,0 +1,13 @@
+.grid {
+    /* height: 17px; */
+}
+
+.map {
+    padding-top: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 20px auto;
+}
