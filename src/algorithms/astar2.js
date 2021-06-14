@@ -30,7 +30,7 @@ export function astar(grid, startNode, targetNode) {
     startNode.distance = 0;
     startNode.heuristicDistance = 0;
     startNode.totalDistance = 0;
-    const unvisitedNodes = getAllNodes(grid, startNode, targetNode);
+    //const unvisitedNodes = getAllNodes(grid, startNode, targetNode);
     const openList = [];
     openList.push(startNode);
 

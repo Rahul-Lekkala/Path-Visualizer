@@ -259,7 +259,7 @@ export default class Path extends Component {
             if (i === visitedNodesInOrder.length) {
                 setTimeout(() => {
                     this.animateShortestPath(nodesInShortestPathOrder);
-                }, 200 * i);
+                }, 20 * i);
                 return;
             }
             setTimeout(() => {
@@ -278,7 +278,7 @@ export default class Path extends Component {
                 document.getElementById(
                     `node-${node.row}-${node.col}`
                 ).className = className;
-            }, 200 * i);
+            }, 20 * i);
         }
     }
 
@@ -491,7 +491,7 @@ export default class Path extends Component {
         return (
             <>
                 <button onClick={() => this.visualizeDijkstra()}>
-                    Visulaize Dijkstra's Algorithm
+                    Visulaize Dijkstra's
                 </button>
 
                 <button onClick={() => this.visualizeBFS()}>BFS</button>
